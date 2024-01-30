@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audio Player - Quase Meia Noite</title>
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+	<script defer type="text/javascript" src="src/js/script.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	
+</head>
+<body>
+	<!-- Container da track -->
+	<div id="container-track">
+		<!-- Título da página -->
+		<h1 id="main-title">Quase Meia Noite</h1>
+		<!-- Imagem da track -->
+		<img id="track-image" src="src/img/quase_meia_noite.png" alt="QuaseMeiaNoite" />
+		<!-- Numéro da track -->
+		<p id="track-num">#1</p>
+		<!-- Titulo da track -->
+		<p id="track-title">PERGUNTAS DA MEIA NOITE</p>
+		<!-- Audio (invisível) -->
+		<audio id="audio-track-player" src="src/audio/1.mp3"></audio>
+		
+		<!-- Controle de volume -->
+		<p id="audio-track-volume-value">Volume: 100</p>
+		<input type="range" id="audio-track-volume-control" min="0" max="1" step="0.01" value="1">
+
+		<!-- Botões de ação -->
+		<div id="container-botoes">
+			<button id="back-btn" class="bi bi-skip-backward-btn-fill"></button>
+			<button id="play-pause-btn" class="bi bi-play-btn-fill"></button>
+			<button id="next-btn" class="bi bi-skip-forward-btn-fill"></button>
+		</div>
+	</div>
+</body>
+</html>
